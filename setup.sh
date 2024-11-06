@@ -10,7 +10,6 @@ RESET='\033[0m'  # Reset to default color
 
 echo -e "${CYAN}==================== Installing Wordpress ====================${RESET}"
 sudo apt update -y && sudo apt upgrade -y && sudo apt install docker-compose -y
-wget https://raw.githubusercontent.com/Coding-Powers/install-wordpress-docker/refs/heads/main/docker-compose.yml
 mkdir db_data
 mkdir wp_data
 sudo docker-compose kill && sudo docker-compose up -d
